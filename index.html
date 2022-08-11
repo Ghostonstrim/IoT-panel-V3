@@ -17,6 +17,9 @@
     </div>
 
     <div class="container">
+
+        <h1>DATOS DEL SUELO </h1>
+
         <div class="info-container">
             <div class="info-title">
                 <h2>Temperatura</h2>
@@ -71,8 +74,22 @@
     </div>
 
     <div class="control-container">
+        <div class="control">
+            <h2> Control de bomba</h2>
+            <div class="output">
+                <label class="switch">
+                    <input type="checkbox" onchange="toggleCheckbox(this)" id="18">
+                    <span class="slider"></span>
+                </label>
+                <p class="state">State: <span id="18s"></span></p>
+        </div>
 
     </div>
 
+    <div class="time">
+        <span id="span"></span>
+    </div>
+
+    <script src="./clock.js"></script>
 </body>
 </html>
